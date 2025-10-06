@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7f6; /* Light background */
+    margin: 0;
+    padding: 20px;
+}
+
+.calculator-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Max width for better mobile experience */
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50; /* A nice green color */
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+#costPrice {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Style the Calculate Button */
+#calculateButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#calculateButton:hover {
+    background-color: #45a049;
+}
+
+/* Result Area */
+.result-box {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.result-box p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.result-amount {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #007bff; /* A striking blue for the final amount */
+    margin-top: 5px;
+}
+
+.formula-info {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+    font-size: 0.9em;
+    color: #777;
+}
+.formula-info p {
+    margin: 4px 0;
+}

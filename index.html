@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavy Threads Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Wavy Threads Calculator</h1>
+
+        <div class="input-group">
+            <label>Product Type:</label>
+            <div class="radio-group">
+                <input type="radio" id="bedsheets" name="productType" value="bedsheets" checked>
+                <label for="bedsheets">Handlooms (Bedsheets)</label>
+                
+                <input type="radio" id="suits" name="productType" value="suits">
+                <label for="suits">Suits</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="costPrice">Cost Price (₹):</label>
+            <input type="number" id="costPrice" placeholder="Enter Cost Price" min="0" required>
+        </div>
+
+        <button id="calculateButton">Calculate Selling Price</button>
+
+        <div class="result-box">
+            <p>Selling Price:</p>
+            <div id="sellingPrice" class="result-amount">₹ 0.00</div>
+        </div>
+
+        <div class="formula-info">
+            <p>Current Formulas (for reference):</p>
+            <p id="formula-bedsheets">Bedsheets: ((Cost ÷ 2) × 1.4) + 50</p>
+            <p id="formula-suits">Suits: ((Cost - 500) × 1.4) + 50</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
